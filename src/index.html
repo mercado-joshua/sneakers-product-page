@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Product Page</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="overlay" data-js-overlay></div>
+    <div class="overlay-lightbox" data-js-overlay-lightbox></div>
+
+    <div class="max-wrapper">
+        <div class="pancake-wrapper">
+            <header class="header-section">
+                <button class="menu-btn" data-js-menu-btn>
+                    <img src="./images/icon-menu.svg" alt="">
+                </button>
+    
+                <img src="./images/logo.svg" alt="" class="image">
+    
+                <div class="user">
+                    <button class="cart-btn" data-js-cart-btn>
+                        <img src="./images/icon-cart.svg" alt="" class="image">
+                    </button>
+    
+                    <div class="avatar">
+                        <img src="./images/image-avatar.png" alt="" class="image">
+                    </div>
+                </div>
+
+                <nav class="nav-section" data-js-nav-section>
+                    <button class="close-btn" data-js-close-btn>
+                        <img src="./images/icon-close.svg" alt="">
+                    </button>
+    
+                    <ul class="primary-menu">
+                        <li class="item">
+                            <a href="#" class="link">Collections</a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="#" class="link">Men</a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="#" class="link">Women</a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="#" class="link">About</a>
+                        </li>
+    
+                        <li class="item">
+                            <a href="#" class="link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="shopping-cart" data-js-shopping-cart>
+                    <h2 class="title">Cart</h2>
+
+                    <form action="" class="checkout-form">
+                        <ul class="cart-list">
+                            <li class="item">
+                                <div class="imagebox">
+                                    <img src="./images/image-product-1-thumbnail.jpg" alt="" class="image">
+                                </div>
+
+                                <div class="productbox">
+                                    <h3 class="title">Autumn Limited Edition</h3>
+                                    <p class="description"><span class="size">$125 x 3</span> <span class="price">$375.00</span></p>
+                                </div>
+
+                                <button class="delete-btn">
+                                    <img src="./images/icon-delete.svg" alt="" class="image">
+                                </button>
+                            </li>
+                        </ul>
+    
+                        <button class="checkout-btn" data-js-checkout-btn>Checkout</button>
+                    </form>
+                </div>
+            </header>
+            <!-- .header-section ends -->
+    
+            <div class="carousel-section">
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <ul class="slider" data-js-slider>
+                            <li class="item" data-js-current-slide>
+                                <img src="./images/image-product-1.jpg" alt="" class="image">
+                            </li>
+    
+                            <li class="item">
+                                <img src="./images/image-product-2.jpg" alt="" class="image">
+                            </li>
+    
+                            <li class="item">
+                                <img src="./images/image-product-3.jpg" alt="" class="image">
+                            </li>
+    
+                            <li class="item">
+                                <img src="./images/image-product-4.jpg" alt="" class="image">
+                            </li>
+                        </ul>
+                        <button class="next-btn" data-js-next-btn>
+                            <img src="./images/icon-next.svg" alt="" class="image">
+                        </button>
+    
+                        <button class="prev-btn -hidden" data-js-prev-btn>
+                            <img src="./images/icon-previous.svg" alt="" class="image">
+                        </button>
+                    </div>
+
+                    <div class="thumbnails" data-js-thumbnails>
+                        <button class="thumbnail-btn -active" data-js-current-slide data-js-lightbox-btn>
+                            <img src="./images/image-product-1-thumbnail.jpg" alt="" class="image">
+                        </button>
+
+                        <button class="thumbnail-btn" data-js-lightbox-btn>
+                            <img src="./images/image-product-2-thumbnail.jpg" alt="" class="image">
+                        </button>
+
+                        <button class="thumbnail-btn" data-js-lightbox-btn>
+                            <img src="./images/image-product-3-thumbnail.jpg" alt="" class="image">
+                        </button>
+
+                        <button class="thumbnail-btn" data-js-lightbox-btn>
+                            <img src="./images/image-product-4-thumbnail.jpg" alt="" class="image">
+                        </button>
+                    </div>
+                </div>
+
+                <form class="product-form">
+                    <h3 class="company">Sneaker Company</h3>
+                    <h2 class="title">Fall Limited Edition Sneakers</h2>
+                    <p class="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the waether can offer.</p>
+
+                    <div class="price-info">
+                        <h3 class="price"><i class="icon fa-solid fa-dollar-sign"></i>125.00</h3>
+                        <h3 class="discount">50%</h3>
+                        <h3 class="prev-price"><i class="icon fa-solid fa-dollar-sign"></i>250.00</h3>
+                    </div>
+
+                    <div class="actionbox">
+                        <div class="number-spinner" data-js-number-spinner>
+                            <button type="button" class="decrease-btn" data-js-spinner-btn>
+                                <i class="icon fa-solid fa-minus"></i>
+                            </button>
+    
+                            <input 
+                                data-js-spinner-number 
+                                type="number" 
+                                name="number"
+                                class="number" 
+                                value="1" 
+                                readonly
+                            />
+    
+                            <button type="button" class="increase-btn" data-js-spinner-btn>
+                                <i class="icon fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+    
+                        <button type="button" class="submit-btn">
+                            <i class="icon fa-solid fa-cart-shopping"></i> Add to cart
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- .carousel-section ends -->
+        </div>
+        <!-- .pancake-wrapper ends -->
+    </div>
+
+    <template data-js-lightbox-template>
+        <div class="carousel-lightbox">
+            <button class="close-btn" data-js-close-btn>
+                <img src="./images/icon-close.svg" alt="" class="image">
+            </button>
+
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <ul class="slider" data-js-slider>
+                        <li class="item" data-js-current-slide>
+                            <img src="./images/image-product-1.jpg" alt="" class="image">
+                        </li>
+    
+                        <li class="item">
+                            <img src="./images/image-product-2.jpg" alt="" class="image">
+                        </li>
+    
+                        <li class="item">
+                            <img src="./images/image-product-3.jpg" alt="" class="image">
+                        </li>
+    
+                        <li class="item">
+                            <img src="./images/image-product-4.jpg" alt="" class="image">
+                        </li>
+                    </ul>
+                    <button class="next-btn" data-js-next-btn>
+                        <img src="./images/icon-next.svg" alt="" class="image">
+                    </button>
+    
+                    <button class="prev-btn -hidden" data-js-prev-btn>
+                        <img src="./images/icon-previous.svg" alt="" class="image">
+                    </button>
+                </div>
+    
+                <div class="thumbnails" data-js-thumbnails>
+                    <button class="thumbnail-btn -active" data-js-current-slide>
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="" class="image">
+                    </button>
+    
+                    <button class="thumbnail-btn">
+                        <img src="./images/image-product-2-thumbnail.jpg" alt="" class="image">
+                    </button>
+    
+                    <button class="thumbnail-btn">
+                        <img src="./images/image-product-3-thumbnail.jpg" alt="" class="image">
+                    </button>
+    
+                    <button class="thumbnail-btn">
+                        <img src="./images/image-product-4-thumbnail.jpg" alt="" class="image">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </template>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/behaviors/nav-section.js"></script>
+    <script src="js/behaviors/carousel.js"></script>
+    <script src="js/behaviors/number-spinner.js"></script>
+    <script src="js/behaviors/lightbox.js"></script>
+    <script src="js/behaviors/shopping-cart.js"></script>
+</body>
+</html>

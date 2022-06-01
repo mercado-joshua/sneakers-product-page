@@ -1,0 +1,38 @@
+.overlay-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 99;
+
+    &.-show {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.carousel-lightbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    > .close-btn {
+        align-self: flex-end;
+    }
+
+    > .carousel-wrapper {
+        max-width: 350px;
+
+        > .carousel {
+            height: 350px;
+        }
+
+        > .thumbnails {
+            padding: 0 2rem;
+        }
+    }
+}

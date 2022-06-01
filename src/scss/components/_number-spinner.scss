@@ -1,0 +1,35 @@
+@use '../utils/breakpoints';
+
+.number-spinner {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem 1rem;
+    background-color: #f7f8fd;
+    border-radius: .6rem;
+
+    > .decrease-btn,
+    > .increase-btn {
+        color: #ff7d1b;
+        font-weight: bold;
+
+        &.-disabled {
+            opacity: .5;
+        }
+    }
+
+    > .number {
+        flex: 1;
+        border: 0;
+        background: transparent;
+        text-align: center;
+
+        &:focus {
+            outline: 0;
+        }
+
+        @include breakpoints.media-breakpoint-up( 830px ) {
+            width: 3rem;
+        }
+    }
+}
